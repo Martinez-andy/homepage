@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Homepage</title>
+    </head>
+    <body>
+        <div class="row background-black">
+            <div class="sticky col-seg sidebar background-black">
+                <a href="index.html">
+                    <video autoplay loop muted width="90%" class="pic-center">
+                        <source src="images/Logo.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <div class="line"></div>
+                <ul class="white font sidelinks lower">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="hobbies.html">Hobbies</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About me</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact me</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="col-seg">
+                    <ol class="bottom">
+                        <li class="in-line">
+                            <a href="https://www.instagram.com/_andy.martinez_/">
+                                <img src="images/Instagram.png" alt="instagram logo" width="30">
+                            </a>
+                        </li>
+                        <li class="in-line">
+                            <a href="https://www.linkedin.com/in/amharvard/">
+                                <img src="images/Linkedin.png" alt="linked in logo" width="30">
+                            </a>
+                        </li>
+                        <li class="in-line">
+                            <a href="https://twitter.com/AndyMar50887285">
+                                <img src="images/Twitter.png" alt="twitter logo" width="30">
+                            </a>
+                        </li>
+                        <li class="in-line">
+                            <a href="https://github.com/Martinez-andy">
+                                <img src="images/Github.png" alt="github logo" width="30">
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        <div class="line"></div>
+        <div class="main">
+            <h1 class="font centered title">Contact me!</h1>
+            <div id="feedback">
+            </div>
+            <div class="right-line"></div>
+            <div class="contact-box rounded">
+                <h3 class="font centered">Please enter your information</h3>
+                <form>
+                    <input autofocus type="text" class="input-field" placeholder="First and last name" id="name" required>
+                    <input type="email" class="input-field" placeholder="Email address" id="email" required>
+                    <input type="text" class="input-field" placeholder="Subject" id="subject" required>
+                    <textarea class="input-field textarea-field" id="message" placeholder="Message"></textarea>
+                    <button type="button" class="btn btn-primary" id="alert">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded',function() {
+                document.querySelector('#alert').addEventListener('click', function() {
+                    let name = document.querySelector('#name');
+                    let email = document.querySelector('#email');
+                    let subject = document.querySelector('#subject');
+                    let message = document.querySelector('#message');
+
+                    if (name.value == '' || email.value == '' || subject.value == '' || message.value == '') {
+                        alert('Please fill in all text-fields')
+                    }
+                    else {
+                        alert('Your message was sent successfully!')
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+Ten html tags:
+    Video
+    IMG
+    Aside
+    UL
+    OL
+    Li
+    P
+    A
+    Input
+    Button
+    Link
+    Script
+    Div
+    Span
+
+Five CSS properties:
+    top
+    width
+    height
+    border-top
+    position
+    text-align
+    color
+    font-family
+    list-style-type
+    display
+
+Bootstrap:
+    On my about me page, I used Bootstrap's carousel feature. I also used their button template in the contact me page.
+
+Javascript:
+    I used javascript to do two things on the contact me page. One: make sure the user actually input text into the
+    text box. Two: alert the user that "the message was sent successfully." I looked into having the send button
+    actually sent an email to my input but it would require external stuff so I instead opted to have the button's
+    only functionality be to display alerts. 
